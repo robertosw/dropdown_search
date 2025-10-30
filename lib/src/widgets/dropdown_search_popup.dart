@@ -297,7 +297,7 @@ class DropdownSearchPopupState<T> extends State<DropdownSearchPopup<T>> {
     );
 
     if (widget.popupProps.validationBuilder != null) {
-      return widget.popupProps.validationBuilder!(context, _selectedItems);
+      return widget.popupProps.validationBuilder!(context, _selectedItems, onValidate);
     }
 
     return defaultValidation;

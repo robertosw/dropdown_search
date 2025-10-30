@@ -60,7 +60,7 @@ typedef BeforeChangeMultiSelection<T> = Future<bool?> Function(
 typedef FavoriteItemsBuilder<T> = Widget Function(
     BuildContext context, T item, bool isSelected);
 typedef ValidationMultiSelectionBuilder<T> = Widget Function(
-    BuildContext context, List<T> items);
+    BuildContext context, List<T> items, void Function() validate);
 typedef PositionCallback = RelativeRect Function(
     RenderBox dropdownBox, RenderBox overlay);
 typedef OnItemAdded<T> = void Function(List<T> selectedItems, T addedItem);
