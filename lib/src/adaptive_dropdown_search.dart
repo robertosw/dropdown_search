@@ -33,9 +33,10 @@ class AdaptiveDropdownSearch<T> extends BaseDropdownSearch<T> {
     super.textProps,
   }) : super(
           uiMode: context.getUiToApply(UiMode.adaptive),
-          popupProps: context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
-              ? popupProps.cupertinoProps
-              : popupProps.materialProps,
+          popupProps:
+              context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
+                  ? popupProps.cupertinoProps
+                  : popupProps.materialProps,
           groupId: context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
               ? popupProps.cupertinoProps.autoCompleteProps.groupId
               : popupProps.materialProps.autoCompleteProps.groupId,
@@ -73,9 +74,10 @@ class AdaptiveDropdownSearch<T> extends BaseDropdownSearch<T> {
     super.textProps,
   }) : super.multiSelection(
           uiMode: context.getUiToApply(UiMode.adaptive),
-          popupProps: context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
-              ? popupProps.cupertinoProps
-              : popupProps.materialProps,
+          popupProps:
+              context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
+                  ? popupProps.cupertinoProps
+                  : popupProps.materialProps,
           groupId: context.getUiToApply(UiMode.adaptive) == UiToApply.cupertino
               ? popupProps.cupertinoProps.autoCompleteProps.groupId
               : popupProps.materialProps.autoCompleteProps.groupId,

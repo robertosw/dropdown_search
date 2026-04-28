@@ -139,7 +139,8 @@ class TextFieldProps extends BaseTextFieldProps {
     this.ignorePointers,
     this.magnifierConfiguration,
     this.onTapOutside,
-    this.stylusHandwritingEnabled = EditableText.defaultStylusHandwritingEnabled,
+    this.stylusHandwritingEnabled =
+        EditableText.defaultStylusHandwritingEnabled,
     this.spellCheckConfiguration,
     this.undoController,
     this.onTapUpOutside,
@@ -147,7 +148,8 @@ class TextFieldProps extends BaseTextFieldProps {
     this.selectAllOnFocus,
   });
 
-  static Widget _defaultContextMenuBuilder(BuildContext context, EditableTextState editableTextState) {
+  static Widget _defaultContextMenuBuilder(
+      BuildContext context, EditableTextState editableTextState) {
     return AdaptiveTextSelectionToolbar.editableText(
       editableTextState: editableTextState,
     );

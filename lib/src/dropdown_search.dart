@@ -36,7 +36,8 @@ class DropdownSearch<T> extends BaseDropdownSearch<T> {
         );
 
   DropdownSearch.multiSelection({
-    MultiSelectionPopupProps<T> popupProps = const MultiSelectionPopupProps.menu(),
+    MultiSelectionPopupProps<T> popupProps =
+        const MultiSelectionPopupProps.menu(),
     super.key,
     super.mode = Mode.form,
     super.autoValidateMode,

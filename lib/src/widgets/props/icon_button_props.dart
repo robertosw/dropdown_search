@@ -25,6 +25,7 @@ class IconButtonProps {
   final bool? isSelected;
   final Widget? selectedIcon;
   final ValueChanged<bool>? onHover;
+  final VoidCallback? onLongPress;
 
   const IconButtonProps({
     this.icon,
@@ -50,5 +51,6 @@ class IconButtonProps {
     this.isSelected,
     this.selectedIcon,
     this.onHover,
+    this.onLongPress,
   }) : assert(splashRadius == null || splashRadius > 0);
 }

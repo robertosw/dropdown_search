@@ -77,6 +77,7 @@ Future openCupertinoDialog(
     context: context,
     barrierDismissible: props.barrierDismissible,
     barrierLabel: props.barrierLabel,
+    barrierColor: props.barrierColor,
     useRootNavigator: props.useRootNavigator,
     anchorPoint: props.anchorPoint,
     routeSettings: props.routeSettings,

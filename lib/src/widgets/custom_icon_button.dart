@@ -19,6 +19,7 @@ class CustomIconButton extends StatelessWidget {
     return IconButton(
       icon: icon,
       onPressed: onPressed,
+      onLongPress: props.onLongPress,
       style: props.style,
       isSelected: props.isSelected,
       selectedIcon: props.selectedIcon,

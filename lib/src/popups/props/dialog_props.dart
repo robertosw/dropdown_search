@@ -78,6 +78,7 @@ class CupertinoDialogProps {
   final bool barrierDismissible;
   final RouteSettings? routeSettings;
   final Offset? anchorPoint;
+  final Color? barrierColor;
 
   final List<Widget>? actions;
   final ScrollController? scrollController;
@@ -89,6 +90,7 @@ class CupertinoDialogProps {
     this.barrierDismissible = false,
     this.useRootNavigator = true,
     this.barrierLabel,
+    this.barrierColor,
     this.routeSettings,
     this.anchorPoint,
     this.actions,
